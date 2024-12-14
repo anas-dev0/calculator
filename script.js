@@ -46,8 +46,13 @@ two.addEventListener("click",(e)=>{
     output.textContent+="2"
 })
 equal.addEventListener("click",(e)=>{
-    output.textContent=eval(output.textContent)
-   
+    try{
+        output.textContent=eval(output.textContent)
+    }
+   catch
+   {
+        output.textContent =("ERROR")
+   }
     
 })
 plus.addEventListener("click",(e)=>{
@@ -72,6 +77,3 @@ seven.addEventListener("click",(e)=>{
 six.addEventListener("click",(e)=>{
     output.textContent +="6"
 })
-
-
-
