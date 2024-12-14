@@ -16,7 +16,9 @@ const minus=document.querySelector(".minus")
 const six=document.querySelector(".six")
 
 
-
+mul.addEventListener("click",(e)=>{
+    output.textContent+="*"
+})
 zero.addEventListener("click",(e)=>{
     output.textContent+="0"
 })
