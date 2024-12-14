@@ -19,5 +19,21 @@ two.addEventListener("click",(e)=>{
     output.textContent+="2"
 })
 equal.addEventListener("click",(e)=>{
-    
+    let out=eval(output.textContent)
+    output.textContent=out
+})
+three.addEventListener("click",(e)=>{
+    output.textContent +=3
+})
+zero.addEventListener("click",(e)=>{
+    output.textContent+=0
+})
+mul.addEventListener("click",(e)=>{
+    output.textContent += "*"
+})
+point.addEventListener("click",(e)=>{
+    output.textContent +="."
+})
+div.addEventListener("click",(e)=>{
+    output.textContent +="/"
 })
