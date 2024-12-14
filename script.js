@@ -10,10 +10,31 @@ const mul=document.querySelector(".mul")
 const nine=document.querySelector(".nine")
 const eight=document.querySelector(".eight")
 const seven=document.querySelector(".seven")
+const five=document.querySelector(".five")
+const four=document.querySelector(".four")
+const minus=document.querySelector(".minus")
 const six=document.querySelector(".six")
 
 
 
+zero.addEventListener("click",(e)=>{
+    output.textContent+="0"
+})
+point.addEventListener("click",(e)=>{
+    output.textContent+="."
+})
+five.addEventListener("click",(e)=>{
+    output.textContent+="5"
+})
+div.addEventListener("click",(e)=>{
+    output.textContent+="/"
+})
+four.addEventListener("click",(e)=>{
+    output.textContent+="4"
+})
+minus.addEventListener("click",(e)=>{
+    output.textContent+="-"
+})
 one.addEventListener("click",(e)=>{
     output.textContent+="1"
 })
@@ -21,7 +42,9 @@ two.addEventListener("click",(e)=>{
     output.textContent+="2"
 })
 equal.addEventListener("click",(e)=>{
-    output.textContent+="="
+    output.textContent=eval(output.textContent)
+   
+    
 })
 plus.addEventListener("click",(e)=>{
     output.textContent +="+"
@@ -47,4 +70,4 @@ six.addEventListener("click",(e)=>{
 })
 
 
-console.log(3*4)
+
